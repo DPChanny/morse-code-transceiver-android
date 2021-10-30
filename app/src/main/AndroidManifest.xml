@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dpc.android.morse_code_transceiver">
+
+    <uses-feature android:name="android.hardware.sensor.light" android:required="true"/>
+
+    <application
+        android:fullBackupContent="false"
+        android:allowBackup="false"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MorseCodeTransceiver"
+        tools:ignore="LockedOrientationActivity">
+
+        <activity
+            android:name=".TransmitterActivity"
+            android:label="@string/transmitter"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ReceiverActivity"
+            android:label="@string/receiver"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">모스 부호 송수신기</string>
+    <string name="receiver">수신기</string>
+    <string name="transmitter">송신기</string>
+    <string name="to_main_menu">메인화면으로</string>
+    <string name="message">메시지</string>
+    <string name="start_transmitting">송신 시작</string>
+    <string name="cancel_transmitting">송신 취소</string>
+    <string name="start_receiving">수신 시작</string>
+    <string name="cancel_receiving">수신 취소</string>
+    <string name="light_sensor_value">현재 조도 센서 값: </string>
+    <string name="light_sensor_on_off">On/Off 탐지 값: </string>
+</resources>
